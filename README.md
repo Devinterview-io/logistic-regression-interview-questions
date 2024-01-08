@@ -212,20 +212,25 @@ $$
 
 The key reason for using the **sigmoid function** in **logistic regression** is its ability to convert the output of a linear equation (the "log-odds") into a **probability**.
 
-The probability ($\text{Prob}(\text{class} = 1 | x)$) that a data sample ($x$) belongs to the positive class (commonly indicated as "1") is given by:
+The probability (
 
-$$
-\sigma(z) = \frac{1}{1 + e^{-z}},
-$$
+![equation](https://latex.codecogs.com/gif.latex?\text{Prob}(\text{class}&space;=&space;1&space;|&space;x))
 
-where $z$ is the **log-odds** defined as:
+) that a data sample ( 
 
-$$
-$$
-\text{log-odds} &= \log \left( \frac{\text{Prob}(\text{class} = 1 | x)}{\text{Prob}(\text{class} = 0 | x)} \right) \\
-&= w^T x + b
-$$
-$$
+![equation](https://latex.codecogs.com/gif.latex?x) 
+
+) belongs to the positive class (commonly indicated as "1") is given by:
+
+![equation](https://latex.codecogs.com/gif.latex?\sigma(z)&space;=&space;\frac{1}{1&space;&plus;&space;e^{-z}}),
+
+where 
+
+![equation](https://latex.codecogs.com/gif.latex?z)
+
+is the **log-odds** defined as:
+
+![equation](https://latex.codecogs.com/gif.latex?\text{log-odds}&space;=&space;\log&space;\left(&space;\frac{\text{Prob}(\text{class}&space;=&space;1&space;|&space;x)}{\text{Prob}(\text{class}&space;=&space;0&space;|&space;x)}&space;\right)&space;\\&space;=&space;w^T&space;x&space;&plus;&space;b)
 
 ### Decision Boundary
 
@@ -331,10 +336,7 @@ L1 regularization adds a term to the loss function that is the absolute value of
 
 Mathematically, L1 regularization is expressed as:
 
-$$
-\text{Loss}_{\text{L1}} = \text{Loss}_{\text{unregularized}} + \lambda \sum_{j=1}^{p}\lvert \beta_j \rvert
-$$
-
+![equation](https://latex.codecogs.com/gif.latex?\text{Loss}_{\text{L1}}&space;=&space;\text{Loss}_{\text{unregularized}}&space;&plus;&space;\lambda&space;\sum_{j=1}^{p}\lvert&space;\beta_j&space;\rvert)
 Where:
 
 - $\lambda$ determines the strength of regularization, and
